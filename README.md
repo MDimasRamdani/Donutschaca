@@ -1,145 +1,113 @@
-# 🍩 Donutschaca – Web Aplikasi Pemesanan Donat
+🍩 Donutschaca – Web-Based Donut Ordering System
+<p align="center"> <img src="donut.png" width="120" alt="Donutschaca Logo"> </p> <p align="center"> <b>Web Application for UMKM Donut Ordering</b><br> Built with PHP Native, MySQL & Bootstrap </p> <p align="center"> <img src="https://img.shields.io/badge/PHP-Native-blue?logo=php"> <img src="https://img.shields.io/badge/MySQL-Database-orange?logo=mysql"> <img src="https://img.shields.io/badge/Bootstrap-Frontend-purple?logo=bootstrap"> <img src="https://img.shields.io/badge/Status-Active-success"> </p>
 
-Aplikasi **Donutschaca** adalah sistem pemesanan donat berbasis web yang dikembangkan menggunakan **PHP Native**, **MySQL**, serta teknologi frontend modern seperti **HTML, CSS, JavaScript, dan Bootstrap**. Aplikasi ini dirancang untuk membantu UMKM dalam mengelola produk, pemesanan, pembayaran, serta laporan penjualan secara terstruktur dan efisien.
+🚀 About The Project
 
----
+Donutschaca adalah aplikasi pemesanan kue berbasis web yang dikembangkan untuk membantu UMKM Donutschaca dalam mengelola proses bisnis secara digital, mulai dari manajemen produk, pemesanan, pembayaran, hingga laporan penjualan.
 
-## 🚀 Fitur Utama
+Aplikasi ini dibangun menggunakan PHP Native tanpa framework backend untuk memperkuat pemahaman logika pemrograman dan struktur sistem informasi berbasis web.
 
-Aplikasi ini memiliki **3 aktor utama** dengan peran dan hak akses yang berbeda, yaitu **Admin**, **Owner**, dan **Pelanggan**.
+👥 User Roles & Features
+Aplikasi ini memiliki 3 aktor utama dengan hak akses yang berbeda:
+👨‍💼 Admin
+<p align="center"> <img src="img/gambarweb/Admin/DashboardAdmin.png" width="600"> </p>
+Fungsi Admin:
+- Mengelola data produk
+- Mengelola pemesanan pelanggan
+- Mengelola pembayaran
+- Melihat bukti pembayaran
+- Melihat riwayat pemesanan
 
-### 👨‍💼 Admin
+👑 Owner
+<p align="center"> <img src="img/gambarweb/Owner/Dashboard.png" width="600"> </p>
+Fungsi Owner:
+- Melihat laporan produk
+- Melihat laporan pemesanan
+- Melihat laporan pembayaran
+- Melihat pendapatan penjualan
+- Mengelola akun admin
 
-![Dashboard Admin](img/gambarweb/Admin/DashboardAdmin.png)
+🧑‍💻 Pelanggan
+<p align="center"> <img src="img/gambarweb/Pelanggan/Dashboard.png" width="600"> </p>
+Fungsi Pelanggan:
+- Melihat daftar produk
+- Melakukan pemesanan produk
+- Melakukan Transaksi Pembayaran
 
-Admin bertugas mengelola operasional sistem harian, meliputi:
+🛠️ Tech Stack
+<p align="center"> <img src="https://skillicons.dev/icons?i=php,html,css,js,bootstrap,mysql,git,github,vscode" /> </p>
+Detail:
+- Backend : PHP Native
+- Frontend : HTML, CSS, JavaScript
+- UI Framework : Bootstrap
+- Database : MySQL
+- Server : Apache (XAMPP)
 
-* Mengelola data produk
-* Mengelola pemesanan pelanggan
-* Mengelola pembayaran
-* Melihat bukti pembayaran
-* Melihat riwayat pemesanan
-
-### 👑 Owner
-
-![Dashboard Owner](img/gambarweb/Owner/Dashboard.png)
-
-Owner memiliki akses monitoring dan manajerial, meliputi:
-
-* Melihat laporan produk
-* Melihat laporan pemesanan
-* Melihat laporan pembayaran
-* Melihat pendapatan penjualan
-* Mengelola akun admin
-
-### 🧑‍💻 Pelanggan
-![Dashboard Pelanggan](img/gambarweb/Pelanggan/Dashboard.png)
-Pelanggan menggunakan sistem untuk melakukan transaksi, meliputi:
-
-* Melihat daftar produk
-* Melakukan pemesanan produk
-
----
-
-## 🛠️ Teknologi yang Digunakan
-
-* **Backend** : PHP Native
-* **Frontend** : HTML, CSS, JavaScript
-* **Framework CSS** : Bootstrap
-* **Database** : MySQL
-* **Web Server** : Apache (XAMPP)
-
----
-
-## 📁 Struktur Folder
-
-Struktur direktori utama project adalah sebagai berikut:
-
-```bash
+📁 Project Structure
 htdocs/
-├── admin/        # Halaman dan fitur khusus Admin
-├── owner/        # Halaman dan laporan khusus Owner
-├── pelanggan/    # Halaman pelanggan (frontend pemesanan)
-├── koneksi/      # Konfigurasi dan koneksi database
-├── bukti/        # Penyimpanan bukti pembayaran
-├── img/          # Asset gambar aplikasi
-├── donut.png     # Logo / gambar utama
+├── admin/        # Halaman & fitur Admin
+├── owner/        # Halaman & laporan Owner
+├── pelanggan/    # Halaman pelanggan
+├── koneksi/      # Konfigurasi database
+├── bukti/        # Bukti pembayaran
+├── img/          # Asset & screenshot sistem
+├── donut.png     # Logo aplikasi
 └── index.php     # Entry point aplikasi
-```
 
----
+⚙️ Installation Guide
 
-## ⚙️ Instalasi & Konfigurasi
+1️⃣ Clone repository
 
-1. **Clone repository**
-
-```bash
 git clone https://github.com/username/donutschaca.git
-```
 
-2. **Pindahkan project ke folder htdocs**
 
-```bash
+2️⃣ Pindahkan ke htdocs
+
 C:/xampp/htdocs/donutschaca
-```
 
-3. **Buat database MySQL**
 
-* Nama database: `donutschaca`
-* Import file SQL (jika tersedia)
+3️⃣ Buat database MySQL
 
-4. **Konfigurasi koneksi database**
-   Buka file:
+Nama database: donutschaca
 
-```bash
+Import file .sql (jika tersedia)
+
+4️⃣ Konfigurasi database
+File:
+
 /koneksi/koneksi.php
-```
 
-Sesuaikan dengan konfigurasi MySQL Anda:
-
-```php
 $host = "localhost";
 $user = "root";
 $pass = "";
 $db   = "donutschaca";
-```
 
-5. **Jalankan aplikasi**
-   Buka browser dan akses:
 
-```text
+5️⃣ Jalankan aplikasi
+
 http://localhost/donutschaca
-```
 
----
+🔐 Access Control
+Role	Permissions
+Admin	Produk, Pesanan, Pembayaran
+Owner	Laporan & Manajemen Admin
+Pelanggan	Produk & Pemesanan
 
-## 🔐 Hak Akses Pengguna
+📌 Notes
+Folder bukti/ harus memiliki permission read & write
+Direkomendasikan PHP versi 7.4+
 
-| Role      | Akses                            |
-| --------- | -------------------------------- |
-| Admin     | CRUD Produk, Pesanan, Pembayaran |
-| Owner     | Laporan & Manajemen Admin        |
-| Pelanggan | Melihat Produk & Pemesanan       |
+🎓 Academic Context
+Project ini dikembangkan sebagai bagian dari:
+- Tugas akhir / Skripsi
+- Implementasi Sistem Informasi UMKM
+- Studi kasus aplikasi pemesanan berbasis web
 
----
+👨‍🎓 Developer
+Muhamad Dimas Ramdani Fitrian Syaputra
+Informatics Engineering Student
+Focused on Networking, Web Development & PHP Native
 
-## 📌 Catatan
+“Building systems is not just about code, but about solving real problems.”
 
-* Pastikan folder `bukti/` memiliki permission write (read & write)
-* Gunakan PHP versi 7.4 atau lebih baru untuk kompatibilitas optimal
-
----
-
-## 📄 Lisensi
-
-Project ini dikembangkan untuk kebutuhan akademik dan UMKM. Bebas digunakan dan dikembangkan lebih lanjut sesuai kebutuhan.
-
----
-
-## 👨‍🎓 Developer
-
-Dikembangkan sebagai bagian dari proyek skripsi dan pengembangan sistem informasi berbasis web menggunakan PHP Native dan MySQL.
-
----
-
-✨ *Feel free to fork, improve, and give this repository a ⭐ if you find it useful!*
+⭐ If you find this project useful, don’t forget to give it a star!
