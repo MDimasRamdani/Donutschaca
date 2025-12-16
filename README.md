@@ -2,10 +2,6 @@
 
 Aplikasi **Donutschaca** adalah sistem pemesanan donat berbasis web yang dikembangkan menggunakan **PHP Native**, **MySQL**, serta teknologi frontend modern seperti **HTML, CSS, JavaScript, dan Bootstrap**. Aplikasi ini dirancang untuk membantu UMKM dalam mengelola produk, pemesanan, pembayaran, serta laporan penjualan secara terstruktur dan efisien.
 
-
-
-![Dashboard Pelanggan](img/gambarweb/Pelanggan/Dashboard.png)
-
 ---
 
 ## 🚀 Fitur Utama
@@ -37,7 +33,7 @@ Owner memiliki akses monitoring dan manajerial, meliputi:
 * Mengelola akun admin
 
 ### 🧑‍💻 Pelanggan
-
+![Dashboard Pelanggan](img/gambarweb/Pelanggan/Dashboard.png)
 Pelanggan menggunakan sistem untuk melakukan transaksi, meliputi:
 
 * Melihat daftar produk
