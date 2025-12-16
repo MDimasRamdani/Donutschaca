@@ -26,6 +26,8 @@ Admin bertugas mengelola operasional sistem harian, meliputi:
 
 ### 👑 Owner
 
+![Dashboard Owner](img/gambarweb/Owner/Dashboard.png)
+
 Owner memiliki akses monitoring dan manajerial, meliputi:
 
 * Melihat laporan produk
